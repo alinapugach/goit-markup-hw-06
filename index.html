@@ -20,7 +20,7 @@
     <title>Webstudio</title>
   </head>
   <body>
-    <!-- <header class="header">
+    <header class="header">
       <div class="container">
         <nav class="header-nav">
           <a class="header-logo" href="./index.html"
@@ -56,10 +56,89 @@
             </li>
           </ul>
         </address>
+        <button type="button" class="menu-open-btn">
+          <svg class="icon menu-open-icon" width="24" height="24">
+            <use href="./images/icons.svg#icon-open-menu-mob"></use>
+          </svg>
+        </button>
+        <div class="mob-menu">
+          <div class="mob-menu-nav">
+            <button type="button" class="menu-close-btn">
+              <svg class="modal-close-icon" width="8" height="8">
+                <use class="" href="./images/icons.svg#icon-close-icon"></use>
+              </svg>
+            </button>
+            <ul class="mob-menu-nav-list">
+              <li class="mob-menu-nav-item">
+                <a
+                  class="mob-menu-nav-link mob-menu-nav-link-current"
+                  href="studio#"
+                  >Studio</a
+                >
+              </li>
+              <li class="mob-menu-nav-item">
+                <a class="mob-menu-nav-link" href="portfolio#">Portfolio</a>
+              </li>
+              <li class="mob-menu-nav-item">
+                <a class="mob-menu-nav-link" href="contacts#">Contacts</a>
+              </li>
+            </ul>
+          </div>
+          <address class="mob-menu-address">
+            <ul class="mob-menu-address-list">
+              <li class="mob-menu-address-item">
+                <a
+                  class="mob-menu-address-link mob-menu-address-link-current"
+                  href="tel:+110001111111"
+                  >+11 (000) 111-11-11</a
+                >
+              </li>
+              <li class="mob-menu-address-item">
+                <a
+                  class="mob-menu-address-link"
+                  href="mailto:info@devstudio.com"
+                  >info@devstudio.com</a
+                >
+              </li>
+            </ul>
+          </address>
+          <div class="mob-menu-soc">
+            <ul class="mob-menu-social-list">
+              <li class="mob-menu-social-item">
+                <a href="#" class="mob-menu-social-link">
+                  <svg class="icon mob-menu-icon" width="24" height="24">
+                    <use href="./images/icons.svg#icon-instagram-1"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="mob-menu-social-item">
+                <a href="#" class="mob-menu-social-link">
+                  <svg class="icon mob-menu-icon" width="24" height="24">
+                    <use href="./images/icons.svg#icon-twitter-1"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="mob-menu-social-item">
+                <a href="#" class="mob-menu-social-link">
+                  <svg class="icon mob-menu-icon" width="24" height="24">
+                    <use href="./images/icons.svg#icon-facebook-1"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="mob-menu-social-item">
+                <a href="#" class="mob-menu-social-link">
+                  <svg class="icon mob-menu-icon" width="24" height="24">
+                    <use href="./images/icons.svg#icon-linkedin-1"></use>
+                  </svg>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
       </div>
-    </header> -->
+    </header>
     <main class="main">
-      <!-- <section class="solutions">
+      <section class="solutions">
         <div class="container">
           <h1 class="solutions-title">
             Effective Solutions<br />
@@ -67,7 +146,7 @@
           </h1>
           <button type="button" class="solutions-btn">Order Service</button>
         </div>
-      </section> -->
+      </section>
 
       <section class="points">
         <div class="container">
@@ -131,6 +210,10 @@
           <ul class="team-list">
             <li class="team-item">
               <img
+                srcset="
+                  ./images/mark-guerrero.jpg    1x,
+                  ./images/mark-guerrero-2x.jpg 2x
+                "
                 class="team-img"
                 src="./images/mark-guerrero.jpg"
                 alt="Mark Guerrero"
@@ -174,6 +257,7 @@
             </li>
             <li class="team-item">
               <img
+                srcset="./images/tom-ford.jpg 1x, ./images/tom-ford-2x.jpg 2x"
                 class="team-img"
                 src="./images/tom-ford.jpg"
                 alt="Tom Ford"
@@ -217,6 +301,10 @@
             </li>
             <li class="team-item">
               <img
+                srcset="
+                  ./images/camila-garcia.jpg    1x,
+                  ./images/camila-garcia-2x.jpg 2x
+                "
                 class="team-img"
                 src="./images/camila-garcia.jpg"
                 alt="Camila Garcia"
@@ -260,6 +348,10 @@
             </li>
             <li class="team-item">
               <img
+                srcset="
+                  ./images/daniel-wilson.jpg    1x,
+                  ./images/daniel-wilson-2x.jpg 2x
+                "
                 class="team-img"
                 src="./images/daniel-wilson.jpg"
                 alt="Daniel Wilson"
@@ -311,6 +403,20 @@
           <ul class="portfolio-list">
             <li class="portfolio-item">
               <div class="portfolio-overlay">
+                <picture>
+                  <source
+                    srcset="./images/screen.jpg 1x, screen-2x.jpg 2x"
+                    media="(min-width: 1158px)"
+                  />
+                  <source
+                    srcset="./images/screen-tab.jpg 1x, screen-tab-2x.jpg 2x"
+                    media="(min-width: 768px)"
+                  />
+                  <source
+                    srcset="./images/screen-mob.jpg 1x, screen-mob-2x.jpg 2x"
+                    media="(max-width: 768px)"
+                  />
+                </picture>
                 <img
                   class="portfolio-img"
                   src="./images/screen.jpg"
@@ -331,6 +437,20 @@
             </li>
             <li class="portfolio-item">
               <div class="portfolio-overlay">
+                <picture>
+                  <source
+                    srcset="./images/phone.jpg 1x, phone-2x.jpg 2x"
+                    media="(min-width: 1158px)"
+                  />
+                  <source
+                    srcset="./images/phone-tab.jpg 1x, phone-tab-2x.jpg 2x"
+                    media="(min-width: 768px)"
+                  />
+                  <source
+                    srcset="./images/phone-mob.jpg 1x, phone-mob-2x.jpg 2x"
+                    media="(max-width: 768px)"
+                  />
+                </picture>
                 <img
                   class="portfolio-img"
                   src="./images/phone.jpg"
@@ -351,6 +471,20 @@
             </li>
             <li class="portfolio-item">
               <div class="portfolio-overlay">
+                <picture>
+                  <source
+                    srcset="./images/desktop.jpg 1x, desktop-2x.jpg 2x"
+                    media="(min-width: 1158px)"
+                  />
+                  <source
+                    srcset="./images/desktop-tab.jpg 1x, desktop-tab-2x.jpg 2x"
+                    media="(min-width: 768px)"
+                  />
+                  <source
+                    srcset="./images/desktop-mob.jpg 1x, desktop-mob-2x.jpg 2x"
+                    media="(max-width: 768px)"
+                  />
+                </picture>
                 <img
                   class="portfolio-img"
                   src="./images/desktop.jpg"
@@ -371,6 +505,20 @@
             </li>
             <li class="portfolio-item">
               <div class="portfolio-overlay">
+                <picture>
+                  <source
+                    srcset="./images/driver.jpg 1x, driver-2x.jpg 2x"
+                    media="(min-width: 1158px)"
+                  />
+                  <source
+                    srcset="./images/driver-tab.jpg 1x, driver-tab-2x.jpg 2x"
+                    media="(min-width: 768px)"
+                  />
+                  <source
+                    srcset="./images/driver-mob.jpg 1x, driver-mob-2x.jpg 2x"
+                    media="(max-width: 768px)"
+                  />
+                </picture>
                 <img
                   class="portfolio-img"
                   src="./images/driver.jpg"
@@ -391,6 +539,20 @@
             </li>
             <li class="portfolio-item">
               <div class="portfolio-overlay">
+                <picture>
+                  <source
+                    srcset="./images/screen.jpg 1x, screen-2x.jpg 2x"
+                    media="(min-width: 1158px)"
+                  />
+                  <source
+                    srcset="./images/screen-tab.jpg 1x, screen-tab-2x.jpg 2x"
+                    media="(min-width: 768px)"
+                  />
+                  <source
+                    srcset="./images/screen-mob.jpg 1x, screen-mob-2x.jpg 2x"
+                    media="(max-width: 768px)"
+                  />
+                </picture>
                 <img
                   class="portfolio-img"
                   src="./images/screen.jpg"
@@ -411,6 +573,20 @@
             </li>
             <li class="portfolio-item">
               <div class="portfolio-overlay">
+                <picture>
+                  <source
+                    srcset="./images/girl.jpg 1x, girl-2x.jpg 2x"
+                    media="(min-width: 1158px)"
+                  />
+                  <source
+                    srcset="./images/girl-tab.jpg 1x, girl-tab-2x.jpg 2x"
+                    media="(min-width: 768px)"
+                  />
+                  <source
+                    srcset="./images/girl-mob.jpg 1x, girl-mob-2x.jpg 2x"
+                    media="(max-width: 768px)"
+                  />
+                </picture>
                 <img
                   class="portfolio-img"
                   src="./images/girl.jpg"
@@ -499,7 +675,7 @@
         </div>
       </div>
     </footer>
-    <div class="backdrop is-open">
+    <div class="backdrop">
       <div class="modal">
         <button type="button" class="modal-close">
           <svg class="modal-close-icon" width="8" height="8">
