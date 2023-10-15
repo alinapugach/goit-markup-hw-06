@@ -84,25 +84,26 @@
               </li>
             </ul>
           </div>
-          <address class="mob-menu-address">
-            <ul class="mob-menu-address-list">
-              <li class="mob-menu-address-item">
-                <a
-                  class="mob-menu-address-link mob-menu-address-link-current"
-                  href="tel:+110001111111"
-                  >+11 (000) 111-11-11</a
-                >
-              </li>
-              <li class="mob-menu-address-item">
-                <a
-                  class="mob-menu-address-link"
-                  href="mailto:info@devstudio.com"
-                  >info@devstudio.com</a
-                >
-              </li>
-            </ul>
-          </address>
+
           <div class="mob-menu-soc">
+            <address class="mob-menu-address">
+              <ul class="mob-menu-address-list">
+                <li class="mob-menu-address-item">
+                  <a
+                    class="mob-menu-address-link mob-menu-address-link-current"
+                    href="tel:+110001111111"
+                    >+11 (000) 111-11-11</a
+                  >
+                </li>
+                <li class="mob-menu-address-item">
+                  <a
+                    class="mob-menu-address-link"
+                    href="mailto:info@devstudio.com"
+                    >info@devstudio.com</a
+                  >
+                </li>
+              </ul>
+            </address>
             <ul class="mob-menu-social-list">
               <li class="mob-menu-social-item">
                 <a href="#" class="mob-menu-social-link">
@@ -205,7 +206,7 @@
       </section>
 
       <section class="team">
-        <div class="container">
+        <div class="container team-container">
           <h2 class="team-title">Our Team</h2>
           <ul class="team-list">
             <li class="team-item">
@@ -418,6 +419,7 @@
                   />
                 </picture>
                 <img
+                  srcset="./images/screen.jpg 1x, ./images/screen-2x.jpg 2x"
                   class="portfolio-img"
                   src="./images/screen.jpg"
                   alt="Screen"
@@ -452,6 +454,7 @@
                   />
                 </picture>
                 <img
+                  srcset="./images/phone.jpg 1x, ./images/phone-2x.jpg 2x"
                   class="portfolio-img"
                   src="./images/phone.jpg"
                   alt="Phone"
@@ -486,6 +489,7 @@
                   />
                 </picture>
                 <img
+                  srcset="./images/desktop.jpg 1x, ./images/desktop-2x.jpg 2x"
                   class="portfolio-img"
                   src="./images/desktop.jpg"
                   alt="Desktop"
@@ -520,6 +524,7 @@
                   />
                 </picture>
                 <img
+                  srcset="./images/driver.jpg 1x, ./images/driver-2x.jpg 2x"
                   class="portfolio-img"
                   src="./images/driver.jpg"
                   alt="Driver"
@@ -541,19 +546,29 @@
               <div class="portfolio-overlay">
                 <picture>
                   <source
-                    srcset="./images/screen.jpg 1x, screen-2x.jpg 2x"
+                    srcset="./images/wallpapers.jpg 1x, wallpapers-2x.jpg 2x"
                     media="(min-width: 1158px)"
                   />
                   <source
-                    srcset="./images/screen-tab.jpg 1x, screen-tab-2x.jpg 2x"
+                    srcset="
+                      ./images/wallpapers-tab.jpg 1x,
+                      wallpapers-tab-2x.jpg       2x
+                    "
                     media="(min-width: 768px)"
                   />
                   <source
-                    srcset="./images/screen-mob.jpg 1x, screen-mob-2x.jpg 2x"
+                    srcset="
+                      ./images/wallpapers-mob.jpg 1x,
+                      wallpapers-mob-2x.jpg       2x
+                    "
                     media="(max-width: 768px)"
                   />
                 </picture>
                 <img
+                  srcset="
+                    ./images/wallpapers.jpg    1x,
+                    ./images/wallpapers-2x.jpg 2x
+                  "
                   class="portfolio-img"
                   src="./images/screen.jpg"
                   alt="Screen"
@@ -588,6 +603,7 @@
                   />
                 </picture>
                 <img
+                  srcset="./images/girl.jpg 1x, ./images/girl-2x.jpg 2x"
                   class="portfolio-img"
                   src="./images/girl.jpg"
                   alt="Girl"

@@ -3,7 +3,6 @@ body {
   color: #434455;
   font-size: 16px;
   background-color: #ffffff;
-  overflow-x: none;
 }
 
 img {
@@ -165,7 +164,7 @@ path {
   width: 100vw;
   height: 100vh;
   background-color: #ffffff;
-  padding: 24px 24px 40px 16px;
+  padding: 72px 24px 40px 16px;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -177,8 +176,9 @@ path {
 
 .menu-close-btn {
   display: block;
-  margin-left: auto;
-  margin-bottom: 24px;
+  position: absolute;
+  top: 24px;
+  right: 24px;
   width: 24px;
   border: 1px solid rgba(0, 0, 0, 0.1);
   border-radius: 50%;
@@ -188,7 +188,6 @@ path {
 .mob-menu-nav-list {
   display: flex;
   flex-direction: column;
-  margin-bottom: 168px;
   gap: 40px;
 }
 
@@ -231,7 +230,6 @@ path {
 .mob-menu-social-list {
   display: flex;
   gap: 40px;
-  margin-bottom: 72px;
 }
 
 .mob-menu-social-item {
@@ -412,11 +410,6 @@ path {
   gap: 72px;
 }
 
-.team-list {
-  padding-left: 28px;
-  padding-right: 28px;
-}
-
 .team-info {
   padding: 32px 0;
 }
@@ -529,7 +522,7 @@ path {
   padding: 40px 32px;
   background-color: #4d5ae5;
   width: 100%;
-  height: 100%;
+  height: 101%;
   transform: translateY(100%);
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
@@ -570,6 +563,7 @@ path {
   padding: 0 16px;
   align-items: baseline;
   justify-content: center;
+  gap: 72px;
 }
 
 .footer .container .footer-logo {
@@ -594,7 +588,6 @@ path {
   width: 288px;
   line-height: 1.5;
   letter-spacing: 0.02em;
-  margin-bottom: 72px;
 }
 
 .footer-logo-accent,
@@ -616,7 +609,6 @@ path {
 .footer-social-list {
   display: flex;
   gap: 16px;
-  margin-bottom: 72px;
 }
 
 .footer-social-item {
@@ -955,6 +947,10 @@ path {
     letter-spacing: 0.04em;
   }
 
+  .mob-menu {
+    display: none;
+  }
+
   .menu-open-btn {
     display: none;
   }
@@ -1007,11 +1003,13 @@ path {
 
   .team-list {
     gap: 64px 24px;
+    width: 584px;
   }
 
-  .team-list .container {
-    padding-left: 108px;
-    padding-right: 108px;
+  .team-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
   }
 
   .portfolio-list {
@@ -1020,22 +1018,26 @@ path {
   }
 
   .portfolio-item {
-    width: calc((100% - 72px) / 2);
+    width: calc((100% - 24px) / 2);
   }
 
   .footer-container {
-    padding-left: 108px;
-    padding-right: 164px;
+    width: 584px;
     justify-content: flex-start;
+    gap: 72px 24px;
   }
 
   .footer-logo-container {
-    margin-right: 24px;
     text-align: start;
   }
 
   .footer-paragraph {
     width: 264px;
+  }
+
+  .footer-paragraph,
+  .footer-social-list {
+    margin-bottom: 0;
   }
 
   .footer-social-paragraph {
@@ -1076,7 +1078,6 @@ path {
 @media screen and (min-width: 1158px) {
   .container {
     width: 1158px;
-    padding: 0;
   }
 
   .header-logo {
@@ -1114,6 +1115,12 @@ path {
     display: flex;
     gap: 40px;
     flex-direction: row;
+  }
+
+  .header-address-link {
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
   }
 
   .solutions-title {
@@ -1160,15 +1167,9 @@ path {
   }
 
   .team-list {
+    width: 100%;
     flex-wrap: nowrap;
     gap: 24px;
-    padding: 0;
-    justify-content: space-between;
-  }
-
-  .team-list .container {
-    padding-left: 156px;
-    padding-right: 156px;
   }
 
   .portfolio {
@@ -1189,12 +1190,7 @@ path {
 
   .footer-container {
     flex-wrap: nowrap;
-    padding: 0;
-    justify-content: space-between;
-  }
-
-  .footer-form {
-    flex-wrap: nowrap;
+    gap: 80px;
   }
 
   .footer-paragraph,
@@ -1202,16 +1198,23 @@ path {
     margin-bottom: 0;
   }
 
+  .footer-social {
+    padding-left: 40px;
+  }
+
   .footer-logo-container {
-    margin-right: 120px;
   }
 
   .footer-form-container {
-    margin-left: 80px;
   }
 
   .footer-form {
+    flex-wrap: nowrap;
     gap: 24px;
+  }
+
+  .footer-form-input {
+    opacity: 1;
   }
 
   .modal {
