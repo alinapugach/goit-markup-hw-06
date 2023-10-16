@@ -266,6 +266,11 @@ path {
   padding: 0;
 }
 
+.menu-open-btn:hover,
+.menu-open-btn:focus {
+  background-color: transparent;
+}
+
 .menu-open-icon {
   fill: #2f2f37;
 }
@@ -563,7 +568,6 @@ path {
   padding: 0 16px;
   align-items: baseline;
   justify-content: center;
-  gap: 72px;
 }
 
 .footer .container .footer-logo {
@@ -581,6 +585,7 @@ path {
 
 .footer-logo-container {
   text-align: center;
+  margin-bottom: 72px;
 }
 
 .footer-paragraph {
@@ -604,6 +609,10 @@ path {
   line-height: 1.5;
   letter-spacing: 0.02em;
   margin-bottom: 16px;
+}
+
+.footer-social {
+  margin-bottom: 72px;
 }
 
 .footer-social-list {
@@ -1001,15 +1010,12 @@ path {
     width: calc((100% - 24px) / 2);
   }
 
-  .team-list {
-    gap: 64px 24px;
+  .team-container {
     width: 584px;
   }
 
-  .team-container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+  .team-list {
+    gap: 64px 24px;
   }
 
   .portfolio-list {
@@ -1024,11 +1030,12 @@ path {
   .footer-container {
     width: 584px;
     justify-content: flex-start;
-    gap: 72px 24px;
   }
 
   .footer-logo-container {
     text-align: start;
+    margin-right: 24px;
+    margin-bottom: 72px;
   }
 
   .footer-paragraph {
@@ -1078,6 +1085,7 @@ path {
 @media screen and (min-width: 1158px) {
   .container {
     width: 1158px;
+    padding: 0 15px;
   }
 
   .header-logo {
@@ -1190,7 +1198,6 @@ path {
 
   .footer-container {
     flex-wrap: nowrap;
-    gap: 80px;
   }
 
   .footer-paragraph,
@@ -1199,10 +1206,12 @@ path {
   }
 
   .footer-social {
-    padding-left: 40px;
+    margin-right: 80px;
   }
 
   .footer-logo-container {
+    margin-right: 120px;
+    margin-bottom: 0;
   }
 
   .footer-form-container {
